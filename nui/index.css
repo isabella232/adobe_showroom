@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+
+/*ui*/
+
+.ui {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 0;
+    -webkit-user-select: none;
+}
+
+.ui2 {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 0;
+    -webkit-user-select: none;
+}
+
+.selectbox {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    left: 37%;
+    top: 35%;
+    width: 485px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.selectbutton {
+    position: relative;
+    background: rgb(10, 10, 10);
+    margin: 15px;
+    text-align: center;
+    width: 450px;
+    height: 100px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+.selectbutton:hover{
+    -webkit-transform:scale(1.03);
+}
+
+.selectimg {
+    width: 60px;
+    height: 60px;
+    float:left;
+    margin:17px 0px 0px 10px;
+}
+
+.selecttitle{
+    top: 17px;
+    position: relative;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.selectdes {
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.infobox{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    left: 5%;
+    top: 10%;
+    width: 350px;
+    height: 700px;
+    border-radius: 8px;
+}
+.vehiclelist{
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 200px;
+}
+.perfbox{
+    position: absolute;
+    background-color: #00a37f;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 8px 8px 0px 0px;
+}
+.perf{
+    position: relative;
+    top: 20%;
+    font-size: 30px;
+    font-weight: 500;
+}
+.placeinfo{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 3%;
+    left: 5%;
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+}
+.placetext{
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.placeimg{
+    position:absolute;
+    top:0;
+    width: 60px;
+    height: 60px;
+    background-color: #460096;
+    border-radius: 8px 0px 0px 8px;
+}
+.rusure{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    display:none;
+    top: 30%;
+    text-align: center;
+    left: 40%;
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+}
+.rusure_button{
+    position: absolute;
+    background-color: #00a37f;
+    width: 65px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+.rusurebuttontext{
+    position: relative;
+    top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.rusure_text{
+    position: relative;
+    top: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 25px;
+}
+.buybox{
+    position: absolute;
+    background-color: #00a37f;
+    left: 0%;
+    top: 90%;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 0px 0px 8px 8px;
+}
+.price{
+    position: relative;
+    top: 20%;
+    font-weight: 700;
+    font-size: 25px;
+}
+.makerpic_big{
+    position: relative;
+    display: block;
+    width: 55%;
+    height: 25%;
+    margin: 0 auto;
+    top: 12%;
+
+}
+.classbox{
+    position: absolute;
+    background-color: #00960c;
+    left: 0%;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+.vehicleclassinbox{
+    position: relative;
+    top: 0%;
+    font-weight: 500;
+    font-size: 20px;
+}
+.spectext{
+    position: absolute;
+    top: 0%;
+    font-weight: 700;
+    font-size: 18px;
+}
+.progressbar{
+    position: absolute;
+    width: 70%;
+    height: 2%;
+}
+.specbox{
+    position: absolute;
+    background-color: white;
+    width: 13%;
+    height: 5%;
+    border-radius: 8px;
+}
+.spec{
+    position: relative;
+    top: 5%;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    font-weight: 700;
+    font-size: 16px;
+}
+.seattext{
+    position: absolute;
+    font-weight: 700;
+    font-size: 21px;
+}
+.seatbox{
+    position: absolute;
+    background-color: white;
+    width: 10%;
+    height: 4.5%;
+    top: 70%; 
+    left: 5%;
+    border-radius: 5px;
+}
+.vehicleboxmargin{
+    position: relative;
+    width: 15%;
+    height: 80%;
+    margin-right: 125px;
+    margin-left: 145px;
+}
+.vehiclebox{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
+}
+.vehicleb{
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    box-sizing: border-box; 
+    border:6px solid #00960c;
+    width: 96%;
+    height: 94%;
+    top: 3%;
+    left: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.makerpic_small{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    right:5px;
+    top: 95px;
+}
+.vehiclenamebox{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 45%;
+}
+.vehiclename{
+    color:black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+}
+.makername{
+    color:black;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+.vehicleclassbox{
+    position: absolute;
+    top: 80%;
+    left: -1%;
+    border-radius: 3px;
+    background-color: #00960c;
+}
+.vehicleclass{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 5px;
+}
+.vehicleprice{
+    position: relative;
+    top: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+.slidewrap{
+    height:100%;
+}
+.slidelist{
+    height:100%;
+}
+.vehiclelist input[id*='slide']{
+    display:none;
+}
+.vehiclelist .slidewrap{
+    margin: 0 auto;
+}
+.vehiclelist .slidelist{
+    white-space: nowrap;
+}
+.vehiclelist .slidelist > li{
+    display: inline-block;
+    display:flex;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    transition:all .5s;
+}
+.triangle{
+    position: relative;
+    width:0;
+    height:0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid white;
+    top: 77%;
+    margin: 0 auto;
+}
+
+.front{
+    position: absolute;
+    background-color: #00a37f;
+    width: 13%;
+    height: 4%;
+    top: 83%;
+    left: 5%;
+    text-align: center;
+    border-radius: 4px;
+}
+.back{
+    position: absolute;
+    background-color: #00a37f;
+    width: 13%;
+    height: 4%;
+    top: 83%;
+    left: 20%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.pov{
+    position: absolute;
+    background-color: #00a37f;
+    width: 13%;
+    height: 4%;
+    top: 83%;
+    left: 35%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.povtext{
+    position: absolute;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.slidewrap .slidelist > li {transform:translateX(695px)}

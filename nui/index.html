@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShowRoom</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="showroom.js"></script>
+
+<div class="ui2">
+    <div class="selectbox">
+        <div class="selectbutton" id="garage_button">
+            <img src='img/icon/garage.png' class="selectimg">
+            <div class="selecttitle">차고
+                <div class="selectdes">차고에 들어갑니다.</div>
+            </div>
+        </div>
+        <div class="selectbutton" id="back_button">
+            <img src='img/icon/back.png' class="selectimg">
+            <div class="selecttitle">돌려넣기
+                <div class="selectdes">타고있는 차를 돌려넣습니다.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui">
+    <div class="infobox">
+        <div class="perfbox">
+            <div class="perf">성능</div>
+        </div>
+        <div class="buybox">
+            <dic class="price">0원</dic>
+        </div>
+        <div class="classbox">
+            <div class="vehicleclassinbox">알 수 없음</div>
+        </div>
+
+        <div class="spectext" style="top: 47%; left: 5%;">속도</div>
+        <div class="specbox" style="top: 48%; left: 80%;">
+            <div class="spec" id="maxspeed_spec">0.0</div>
+        </div>
+        <progress class="progressbar" max="400" value="0" style="top: 51%; left: 5%;" id="maxspeed"></progress>
+
+        <div class="spectext" style="top: 54%; left: 5%;">핸들링</div>
+        <div class="specbox" style="top: 55%; left: 80%;">
+            <div class="spec" id="handling_spec">0.0</div>
+        </div>
+        <progress class="progressbar" max="27" value="0" style="top: 58%; left: 5%;" id="handling"></progress>
+
+        <div class="spectext" style="top: 61%; left: 5%;">제동력</div>
+        <div class="specbox" style="top: 62%; left: 80%;">
+            <div class="spec" id="brake_spec">0.0</div>
+        </div>
+        <progress class="progressbar" max="10" value="0" style="top: 65%; left: 5%;" id="brake"></progress>
+
+        <div class="seattext" style="top: 70%;left: 17%;">인승</div>
+        <div class="seatbox" style="top: 70%; left: 5%;">
+            <div class="spec" id="seats">0</div>
+        </div>
+
+        <div class="seattext" style="top: 70%;left: 47%;">연료</div>
+        <div class="seatbox" style="top: 70%; left: 35%;">
+            <div class="spec" id="fuel">0</div>
+        </div>
+
+        <div class="povtext" style="top: 78%;left: 5%;">시점</div>
+        <div class="front">앞</div>
+        <div class="back">뒤</div>
+        <div class="pov">실내</div>
+
+        <img src="" class="makerpic_big">
+    </div>
+    <div class="placeinfo">
+        <div class="placetext">???</div>
+        <img src='' class="placeimg">
+    </div>
+    <div class="rusure">
+        <div class="rusure_text">확실합니까?</div>
+        <div class="rusure_button" id="rusure_yes" style="top:100px; left:100px;">
+            <div class="rusurebuttontext">네</div>
+        </div>
+        <div class="rusure_button" id="rusure_no" style="top:100px; left:180px;">
+            <div class="rusurebuttontext">아니요</div>
+        </div>
+    </div>
+    <div class="triangle"></div>
+    <div class="vehiclelist">
+
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <!-- <div class="vehicleboxmargin">
+                        <div class="vehiclebox">
+                            <div class="vehicleb">
+                                <img src='' class="makerpic_small">
+                                <div class="vehiclenamebox">
+                                    <div class="vehiclename">GT-R</div>
+                                    <div class="makername">NISSAN</div>
+                                </div>
+                                <div class="vehicleclassbox">
+                                    <div class="vehicleclass">슈퍼카</div>
+                                </div>
+                                <div class="vehicleprice">52,910,000원</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</html>
